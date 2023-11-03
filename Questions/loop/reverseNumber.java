@@ -23,6 +23,8 @@ public class reverseNumber {
         return count;
     }
 
+
+
     //optimal solution - can reversed the number without count of digits.
     public static int reversedDigits(int number){
         int reverseNumber = 0;
