@@ -1,6 +1,6 @@
 import java.util.*;
 //Take a number input and reverse that input number    398 --- 893
-public class reverseNumber {
+public class ReverseNumber {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter the Number");

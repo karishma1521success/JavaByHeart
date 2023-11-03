@@ -1,7 +1,7 @@
 import java.util.*;
 
 //code to find the greater number among three numbers and all the numbers are unique.
-public class greaterNumber {       //class name should be the same as file name if its not then file will not run
+public class GreaterNumber {       //class name should be the same as file name if its not then file will not run
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter three numbers");

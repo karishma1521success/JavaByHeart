@@ -1,5 +1,5 @@
 import java.util.*;
-public class power {
+public class Power {
     public static void main(String[] args){
         Scanner scn = new Scanner(System.in);
         int number = scn.nextInt();
