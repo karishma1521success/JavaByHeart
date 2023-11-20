@@ -13,17 +13,22 @@ public class RotateANumber {
         //Find ACtual no. of rotaions because it repeat after the certain rotations and for that find no. of digits in number
         int count = countDigits(number);
         int actual_rotation = rotations % count;
+        if(actual_rotation < 0){
+            //then convert negative rotation into postive logical one
+            //because left rotation at some point will match the right rotation value
+            actual_rotation = actual_rotation + count;
+            //by doing so we have to work for the the +ve rotations 1
+        }
          System.out.println(actual_rotation);
+        
 
          if(actual_rotation == 0){
             System.out.println("The rotation of number " + number + " at " + rotations + " times is " + number);
-         }else if(actual_rotation > 0){
-            //positive - right rotations.
-            int rotatedNumber = ((number % (int)Math.pow(10,actual_rotation)) * (int)Math.pow(10,(count-actual_rotation))) + (number / (int)Math.pow(10,actual_rotation));
-            System.out.println(rotatedNumber);
          }else{
-            //negative - left rotations
-            int rotatedNumber = number % (int)Math.pow(10,(actual_rotation+count)) * (int)Math.pow(10,actual_rotation*-1) + number / (int)Math.pow(10,(count+actual_rotation));
+            //positive - right rotations.
+            int temp1 = (int)Math.pow(10,actual_rotation);   //pow(10,k)
+            int temp2 = (int)Math.pow(10,(count-actual_rotation));  //pow(10,c-k)
+            int rotatedNumber = (number % temp1) * temp2 + (number / temp1); 
             System.out.println(rotatedNumber);
          }
          scn.close();
