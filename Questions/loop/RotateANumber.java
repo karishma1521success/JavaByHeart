@@ -1,8 +1,8 @@
 //We have given a number and value of K (no of rotation if k = +ve (right rotations) , k= -ve (left rotaions) )
-//Step 1. find actual no of rotation = k % (no of digits);
+//Step 1. find actual no of rotation = k % (no of digits); 
+//step 2. if actual rotation - -ve then actual rotation = count + actual rotation;
 //Step 2. if K = 0 (no changes) ans = number
 //Step 3. if K > 0 (then ans = (n % pow(10,k) * pow(10,count - k)) + n / pow (10,k)) if n-12345  , k=2  then  45*1000 + 123 
-//step 4. if k < 0 then  ans = n%pow(10,c+k) * pow(10,k*-1) + n/pow(10,c+k);   c- count  , k - actual rotations  we do c+k because k - -ve  then (c-k) 
 import java.util.*;
 public class RotateANumber {
     public static void main(String[] args){
