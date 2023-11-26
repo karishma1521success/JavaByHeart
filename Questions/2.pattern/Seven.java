@@ -21,7 +21,6 @@ public class Seven {
 
             //preparation for next row
             if(row <= n/2){ //upper half
-                nspaces = n/2;
                 nstars = nstars + 1;
             }else if(row == n/2 + 1){// middle row
                 nspaces = 0;
@@ -30,7 +29,6 @@ public class Seven {
                 nspaces = n/2; 
                 nstars = n/2;
             }else{
-                nspaces = n/2;
                 nstars--;
             }
             scn.close();
