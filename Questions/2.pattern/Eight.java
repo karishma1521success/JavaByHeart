@@ -11,7 +11,7 @@ public class Eight {
                     System.out.print("* ");
                 }else if(row == col || row + col == n + 1){
                     // stars at the diagnonals but stars not the upper diagonals only on the lower diagonals
-                    if(row >= n/2 + 1){
+                    if(row >= n/2 + 1){     //this will print W but for M we only have to change the condition row <= n/2 + 1
                         System.out.print("* ");
                     }else{
                         System.out.print("  ");
